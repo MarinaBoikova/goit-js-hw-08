@@ -18,12 +18,7 @@ const galleryItemMarcup = galleryItems.map(item =>
 
 galleryItemsRef.insertAdjacentHTML('beforeend',  galleryItemMarcup.join(''));
 
-const onHandleLargePhoto = e => 
-    e.preventDefault();
-   let lightbox = new SimpleLightbox('.gallery a', { 
-    captionsData: "alt",
-    captionDelay: 250
-    });
-
-galleryItemsRef.addEventListener('click', onHandleLargePhoto);
-
+let lightbox = new SimpleLightbox('.gallery a', { 
+  captionsData: "alt",
+  captionDelay: 250
+  });
